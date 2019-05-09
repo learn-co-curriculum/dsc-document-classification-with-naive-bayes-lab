@@ -219,7 +219,7 @@ def classify_doc(doc, class_word_freq, p_classes, V, return_posteriors=False):
     return classes[np.argmax(posteriors)]
 ```
 
-# Test Out Your Classifier
+## Test Out Your Classifier
 
 Finally, test out your classifier and measure its accuracy. Don't be perturbed if your results are sub-par; industry use cases would require substantial additional preprocessing before implementing the algorithm in practice.
 
@@ -240,10 +240,10 @@ residuals.value_counts(normalize=True)
 
 
 
-## Summary
-
-Well done! In this lab, you practiced implementing naive Bayes' for document classification!
-
 ## Level-Up
 
 Rework your code into an appropriate class structure so that you could easily implement the algorithm on any given dataset.
+
+## Summary
+
+Well done! In this lab, you practiced implementing naive Bayes' for document classification!
