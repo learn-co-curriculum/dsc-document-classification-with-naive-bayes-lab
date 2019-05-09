@@ -9,7 +9,7 @@ In this lecture, you'll practice implementing the Naive Bayes algorithm on your 
 
 You will be able to:  
 
-* Implement document classification using naive bayes
+* Implement document classification using naive Bayes
 * Understand the need for the Laplacian smoothing correction
 * Explain how to code a bag of words representation
 
@@ -75,7 +75,7 @@ Now, implement a master function to build a naive Bayes classifier. Be sure to u
 #Your code here
 ```
 
-# Test Out Your Classifier
+## Test Out Your Classifier
 
 Finally, test out your classifier and measure its accuracy. Don't be perturbed if your results are sub-par; industry use cases would require substantial additional preprocessing before implementing the algorithm in practice.
 
@@ -84,10 +84,10 @@ Finally, test out your classifier and measure its accuracy. Don't be perturbed i
 #Your Code here
 ```
 
-## Summary
-
-Well done! In this lab, you practiced implementing naive Bayes' for document classification!
-
 ## Level-Up
 
 Rework your code into an appropriate class structure so that you could easily implement the algorithm on any given dataset.
+
+## Summary
+
+Well done! In this lab, you practiced implementing naive Bayes' for document classification!
