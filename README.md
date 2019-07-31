@@ -116,10 +116,6 @@ df2.label.value_counts()
 
 
 
-## Train - Test Split
-
-Now implement a train test split on your dataset.
-
 
 ```python
 # __SOLUTION__ 
@@ -136,11 +132,6 @@ p_classes
 
 
 ```python
-from sklearn.model_selection import train_test_split
-```
-
-
-```python
 # __SOLUTION__ 
 df2.iloc[0]
 ```
@@ -154,13 +145,13 @@ df2.iloc[0]
 
 
 
-## Create the word frequency dictionary for each class
+## Train - Test Split
 
-Create a word frequency dictionary for each class.
+Now implement a train test split on your dataset.
 
 
 ```python
-#Your code here
+from sklearn.model_selection import train_test_split
 ```
 
 
@@ -174,8 +165,9 @@ train_df = pd.concat([X_train, y_train], axis=1)
 test_df = pd.concat([X_test, y_test], axis=1)
 ```
 
-## Count the Total Corpus Words
-Calculate V, the total number of words in the corpus.
+## Create the word frequency dictionary for each class
+
+Create a word frequency dictionary for each class.
 
 
 ```python
@@ -197,9 +189,8 @@ for class_ in classes:
     class_word_freq[class_] = bag
 ```
 
-## Create a Bag of Words Function
-
-Before implementing the entire Naive Bayes algorithm, create a helper function `bag_it()` to create a bag of words representation from a document's text.
+## Count the Total Corpus Words
+Calculate V, the total number of words in the corpus.
 
 
 ```python
@@ -224,9 +215,9 @@ V
 
 
 
-## Implementing Naive Bayes
+## Create a Bag of Words Function
 
-Now, implement a master function to build a naive Bayes classifier. Be sure to use the logarithmic probabilities to avoid underflow.
+Before implementing the entire Naive Bayes algorithm, create a helper function `bag_it()` to create a bag of words representation from a document's text.
 
 
 ```python
@@ -243,13 +234,13 @@ def bag_it(doc):
     return bag
 ```
 
-## Test Out Your Classifier
+## Implementing Naive Bayes
 
-Finally, test out your classifier and measure its accuracy. Don't be perturbed if your results are sub-par; industry use cases would require substantial additional preprocessing before implementing the algorithm in practice.
+Now, implement a master function to build a naive Bayes classifier. Be sure to use the logarithmic probabilities to avoid underflow.
 
 
 ```python
-#Your Code here
+#Your code here
 ```
 
 
@@ -272,13 +263,14 @@ def classify_doc(doc, class_word_freq, p_classes, V, return_posteriors=False):
     return classes[np.argmax(posteriors)]
 ```
 
-## Level-Up
+## Test Out Your Classifier
 
-Rework your code into an appropriate class structure so that you could easily implement the algorithm on any given dataset.
+Finally, test out your classifier and measure its accuracy. Don't be perturbed if your results are sub-par; industry use cases would require substantial additional preprocessing before implementing the algorithm in practice.
 
-## Summary
 
-Well done! In this lab, you practiced implementing naive Bayes' for document classification!
+```python
+#Your Code here
+```
 
 
 ```python
@@ -297,3 +289,11 @@ residuals.value_counts(normalize=True)
     dtype: float64
 
 
+
+## Level-Up
+
+Rework your code into an appropriate class structure so that you could easily implement the algorithm on any given dataset.
+
+## Summary
+
+Well done! In this lab, you practiced implementing naive Bayes' for document classification!
