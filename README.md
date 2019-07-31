@@ -9,7 +9,7 @@ In this lecture, you'll practice implementing the Naive Bayes algorithm on your 
 
 You will be able to:  
 
-* Implement document classification using naive bayes
+* Implement document classification using naive Bayes
 * Understand the need for the Laplacian smoothing correction
 * Explain how to code a bag of words representation
 
