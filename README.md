@@ -9,7 +9,7 @@ In this lecture, you'll practice implementing the Naive Bayes algorithm on your 
 
 You will be able to:  
 
-* Implement document classification using naive Bayes
+* Implement document classification using Naive Bayes
 * Understand the need for the Laplacian smoothing correction
 * Explain how to code a bag of words representation
 
@@ -40,7 +40,7 @@ Now implement a train test split on your dataset.
 from sklearn.model_selection import train_test_split
 ```
 
-## Create the word frequency dictionary for each class
+## Create the Word Frequency Dictionary for Each Class
 
 Create a word frequency dictionary for each class.
 
@@ -90,4 +90,4 @@ Rework your code into an appropriate class structure so that you could easily im
 
 ## Summary
 
-Well done! In this lab, you practiced implementing naive Bayes' for document classification!
+Well done! In this lab, you practiced implementing Naive Bayes for document classification!
