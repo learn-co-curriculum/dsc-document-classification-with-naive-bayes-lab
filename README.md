@@ -9,7 +9,7 @@ In this lecture, you'll practice implementing the Naive Bayes algorithm on your 
 
 You will be able to:  
 
-* Implement document classification using naive Bayes
+* Implement document classification using Naive Bayes
 * Understand the need for the Laplacian smoothing correction
 * Explain how to code a bag of words representation
 
@@ -98,8 +98,8 @@ df2.label.value_counts()
 
 
 
-    ham     747
     spam    747
+    ham     747
     Name: label, dtype: int64
 
 
@@ -113,7 +113,7 @@ p_classes
 
 
 
-    {'ham': 0.5, 'spam': 0.5}
+    {'spam': 0.5, 'ham': 0.5}
 
 
 
@@ -145,7 +145,7 @@ train_df = pd.concat([X_train, y_train], axis=1)
 test_df = pd.concat([X_test, y_test], axis=1)
 ```
 
-## Create the word frequency dictionary for each class
+## Create the Word Frequency Dictionary for Each Class
 
 Create a word frequency dictionary for each class.
 
@@ -179,7 +179,7 @@ V
 
 
 
-    6022
+    6108
 
 
 
@@ -226,6 +226,8 @@ Finally, test out your classifier and measure its accuracy. Don't be perturbed i
 
 ```python
 #Your Code here
+import numpy as np
+
 y_hat_train = X_train.map(lambda x: classify_doc(x, class_word_freq, p_classes, V))
 residuals = y_train == y_hat_train
 residuals.value_counts(normalize=True)
@@ -234,8 +236,8 @@ residuals.value_counts(normalize=True)
 
 
 
-    False    0.782143
-    True     0.217857
+    False    0.750893
+    True     0.249107
     dtype: float64
 
 
@@ -246,4 +248,4 @@ Rework your code into an appropriate class structure so that you could easily im
 
 ## Summary
 
-Well done! In this lab, you practiced implementing naive Bayes' for document classification!
+Well done! In this lab, you practiced implementing Naive Bayes for document classification!
